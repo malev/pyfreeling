@@ -1,0 +1,13 @@
+package:
+  name: pyfreeling
+  version: '0.1.0'
+requirements:
+  build:
+    - python
+  run:
+    - python
+    - lxml
+about:
+  home: https://github.com/malev/pyfreeling/
+  license: GNU
+  summary: "Freeling with python"
