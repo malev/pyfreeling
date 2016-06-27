@@ -2,7 +2,7 @@ import logging
 from subprocess import check_output, CalledProcessError, Popen, PIPE
 from lxml import etree
 
-version = (0, 1, 0)
+version = (0, 1, 1)
 version_string = "PyFreeling version %d.%d.%d" % version
 __copyright__ = 'Copyright (c) 2016 Marcos Vanetta'
 
@@ -56,3 +56,7 @@ class Analyzer(object):
 
         cmd += ['--output', 'xml']
         return cmd
+
+from ._version import get_versions
+__version__ = get_versions()['version']
+del get_versions

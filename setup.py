@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 from pyfreeling import version
 
 install_requires = ['lxml']
@@ -14,6 +14,6 @@ setup(
     description='Python wrapper for Freeling 4.0',
     keywords="nlp freeling spanish",
     license='GPL2',
-    packages=find_packages(),
+    packages=['pyfreeling'],
     install_requires=install_requires
 )

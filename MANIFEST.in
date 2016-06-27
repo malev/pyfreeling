@@ -1,0 +1,2 @@
+include versioneer.py
+include pyfreeling/_version.py
